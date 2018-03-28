@@ -28,8 +28,8 @@
     "homepage": "https://github.com/kufuntu/ng-wordpress-services",
     "keywords": [
         "angular",
-        "javascript",
-        "typescript"
+        "wordpress",
+        "wordpress-api"
     ],
     "license": "MIT",
     "dependencies": {

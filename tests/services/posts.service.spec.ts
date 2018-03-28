@@ -1,20 +1,20 @@
 import { inject, TestBed } from '@angular/core/testing';
 
-import { SumService } from '../../src/ng-wordpress-services';
+import { WpPostsService } from '../../src/ng-wordpress-services';
 
-describe('SumService', () => {
+describe('WpPostsService', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
             providers: [
-                SumService
+                WpPostsService
             ]
         });
     });
 
     it('should be calculate the sum',
-        inject([SumService],
-            (sumService: SumService) => {
+        inject([WpPostsService],
+            (sumService: WpPostsService) => {
                 sumService.calculate(45, 78, 90, 674);
                 expect(sumService.sum).toEqual(887);
             })

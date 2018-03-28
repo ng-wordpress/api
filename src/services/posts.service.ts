@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class SumService {
+export class WpPostsService {
 
     /**
      * Stores the last sum.
      */
-    public sum: number;
+    public sum = 0;
 
     /**
      * Calculates the sum.

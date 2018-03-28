@@ -1,3 +1,3 @@
 // Public classes.
-export { SumService } from './services/sum.service';
-export { ArithmeticModule } from './modules/arithmetic.module';
+export { WpPostsService } from './services/posts.service';
+export { NgWordpressServicesModule } from './modules/ng-wordpress-services.module';
