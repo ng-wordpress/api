@@ -3,6 +3,7 @@ $ cat .gitignore
 /dist
 /documentation
 /coverage
+/.vscode
 
 *.log
 *.tgz
