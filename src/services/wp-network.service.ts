@@ -3,14 +3,20 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { WpRequestOptions } from '../types/WpRequestOptions';
 
+declare var Window: {
+    [key: string]: any; // missing index defintion
+    prototype: Window;
+    new(): Window;
+};
+
 @Injectable()
 export class WpNetworkService {
     private baseUrl = 'http://localhost:8001/';
-    private nonce: string;
+    private nonce = '';
 
     constructor(private http: HttpClient) {
-        if (typeof window !== 'undefined' && window['wpApiSettings']) {
-            this.nonce = window['wpApiSettings']['nonce'];
+        if (typeof window !== 'undefined' && (<any> window)['wpApiSettings']) {
+            this.nonce = (<any> window)['wpApiSettings']['nonce'];
         }
     }
 
@@ -28,7 +34,9 @@ export class WpNetworkService {
     }
 
     public post(url: string, body: any, options?: WpRequestOptions): Observable<any> {
-        const params = {};
+        const params = {
+            '_wpnonce': ''
+        };
         if (options && options.withCredentials) {
             params['_wpnonce'] = this.nonce;
         }
@@ -54,9 +62,9 @@ export class WpNetworkService {
 
     public filter(object: any, filter: string[]) {
         return Object.keys(object)
-            .filter(key => !filter.includes(key))
+            .filter(key => filter.indexOf(key) === -1)
             .reduce((obj, key) => {
-                obj[key] = object[key];
+                (obj as any)[key] = object[key];
                 return obj;
             }, {});
     }
