@@ -1,11 +1,11 @@
 {
-    "name": "ng-wordpress",
+    "name": "@ng-wordpress/api",
     "private": true,
     "version": "0.0.1",
-    "description": "",
-    "main": "./bundles/ng-wordpress.umd.js",
-    "module": "./esm5/ng-wordpress.js",
-    "es2015": "./esm2015/ng-wordpress.js",
+    "description": "A WordPress REST API wrapper for Angular ✨",
+    "main": "./bundles/ng-wordpress-api.umd.js",
+    "module": "./esm5/ng-wordpress-api.js",
+    "es2015": "./esm2015/ng-wordpress-api.js",
     "scripts": {
         "build": "node build.js",
         "test": "karma start",
@@ -16,20 +16,21 @@
         "compodoc": "compodoc -p tsconfig.json",
         "compodoc:serve": "compodoc -s"
     },
-    "typings": "./ng-wordpress.d.ts",
+    "typings": "./ng-wordpress-api.d.ts",
     "author": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kufuntu/ng-wordpress.git"
+        "url": "https://github.com/ng-wordpress/api.git"
     },
     "bugs": {
-        "url": "https://github.com/kufuntu/ng-wordpress/issues"
+        "url": "https://github.com/ng-wordpress/api/issues"
     },
-    "homepage": "https://github.com/kufuntu/ng-wordpress",
+    "homepage": "https://github.com/ng-wordpress/api",
     "keywords": [
         "angular",
         "wordpress",
-        "wordpress-api"
+        "wordpress-api",
+        "ng-wordpress"
     ],
     "license": "MIT",
     "dependencies": {

@@ -58,10 +58,10 @@ export default {
     onwarn: () => { return },
     output: {
         format: 'umd',
-        name: 'ng.wordpressServices',
+        name: 'ng.wordpressApi',
         globals: globals,
         sourcemap: true,
         exports: 'named',
-        amd: { id: 'ng-wordpress' }
+        amd: { id: 'ng-wordpress-api' }
     }
 }

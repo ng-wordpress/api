@@ -1,5 +1,4 @@
 # ng-wordpress
-[![Build Status](https://api.travis-ci.org/kufuntu/ng-wordpress.svg?branch=master)](https://travis-ci.org/kufuntu/ng-wordpress)
 
 ### Installing
 ```Shell
@@ -23,7 +22,7 @@ Include the `umd` bundle in your `index.html`:
 ```Html
 <script src="node_modules/ng-wordpress/bundles/ng-wordpress.umd.js"></script>
 ```
-and use global `ng.wordpressServices` namespace.
+and use global `ng.wordpressApi` namespace.
 
 ### AoT compilation
 The library is compatible with _AoT compilation_.
