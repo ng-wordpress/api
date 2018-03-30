@@ -1,6 +1,6 @@
 {
     "name": "@ng-wordpress/api",
-    "private": false,
+    "license": "MIT",
     "version": "0.0.1",
     "description": "A WordPress REST API wrapper for Angular ✨",
     "main": "./bundles/ng-wordpress-api.umd.js",
@@ -32,7 +32,6 @@
         "wordpress-api",
         "ng-wordpress"
     ],
-    "license": "MIT",
     "dependencies": {
         "tslib": "^1.7.1"
     },
