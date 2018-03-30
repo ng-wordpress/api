@@ -1,4 +1,4 @@
 /**
- * @license ng-wordpress-services
+ * @license ng-wordpress
  * MIT license
  */

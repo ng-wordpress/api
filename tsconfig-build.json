@@ -32,7 +32,7 @@
         "skipTemplateCodegen": true,
         "annotateForClosureCompiler": true,
         "strictMetadataEmit": true,
-        "flatModuleOutFile": "ng-wordpress-services.js",
-        "flatModuleId": "ng-wordpress-services"
+        "flatModuleOutFile": "ng-wordpress.js",
+        "flatModuleId": "ng-wordpress"
     }
 }

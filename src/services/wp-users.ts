@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WpNetworkService } from './wp-network.service';
+import { WpNetwork } from './wp-network';
 import { Observable } from 'rxjs/Observable';
 import { WpRequestOptions } from '../types/WpRequestOptions';
 import { WpUser } from '../types/WpUser';
@@ -7,9 +7,9 @@ import { WpBaseUser } from '../types/WpBaseUser';
 import { WpContext } from '../types/shared/WpContext';
 
 @Injectable()
-export class WpUsersService {
+export class WpUsers {
 
-    constructor(private network: WpNetworkService) {}
+    constructor(private network: WpNetwork) {}
 
     public getList(args?: any, options?: WpRequestOptions): Observable<WpUser[]> {
         return this.network.get('users', args, { withCredentials: true, ...options});

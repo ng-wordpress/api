@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WpNetworkService } from './wp-network.service';
+import { WpNetwork } from './wp-network';
 import { Observable } from 'rxjs/Observable';
 import { WpContext } from '../types/shared/WpContext';
 import { WpRequestOptions } from '../types/WpRequestOptions';
@@ -7,7 +7,7 @@ import { WpTag } from '../types/WpTag';
 
 @Injectable()
 export class WpTags {
-  constructor(private network: WpNetworkService) {}
+  constructor(private network: WpNetwork) {}
 
   public getList(
     args?: any,

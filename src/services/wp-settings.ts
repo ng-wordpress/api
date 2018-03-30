@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { WpRequestOptions } from '../types/WpRequestOptions';
-import { WpNetworkService } from './wp-network.service';
+import { WpNetwork } from './wp-network';
 import { Observable } from 'rxjs/Observable';
 import { WpSetting } from '../types/WpSetting';
 
 @Injectable()
-export class WpSettingsService {
+export class WpSettings {
 
-    constructor(private network: WpNetworkService) {}
+    constructor(private network: WpNetwork) {}
 
     public get(options?: WpRequestOptions): Observable<WpSetting> {
         return this.network.get('settings', {}, { withCredentials: true, ...options});

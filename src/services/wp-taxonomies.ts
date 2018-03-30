@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WpNetworkService } from './wp-network.service';
+import { WpNetwork } from './wp-network';
 import { Observable } from 'rxjs/Observable';
 import { WpContext } from '../types/shared/WpContext';
 import { WpRequestOptions } from '../types/WpRequestOptions';
@@ -7,7 +7,7 @@ import { WpTaxonomy } from '../types/WpTaxonomy';
 
 @Injectable()
 export class WpTaxonomies {
-  constructor(private network: WpNetworkService) {}
+  constructor(private network: WpNetwork) {}
 
   public getList(
     args?: { type?: string; context?: WpContext; },

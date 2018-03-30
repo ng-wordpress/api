@@ -1,16 +1,16 @@
-# ng-wordpress-services
-[![Build Status](https://api.travis-ci.org/kufuntu/ng-wordpress-services.svg?branch=master)](https://travis-ci.org/kufuntu/ng-wordpress-services)
+# ng-wordpress
+[![Build Status](https://api.travis-ci.org/kufuntu/ng-wordpress.svg?branch=master)](https://travis-ci.org/kufuntu/ng-wordpress)
 
 ### Installing
 ```Shell
-npm install ng-wordpress-services --save 
+npm install ng-wordpress --save 
 ```
 ### Loading
 #### Using SystemJS configuration
 ```JavaScript
 System.config({
     map: {
-        'ng-wordpress-services': 'node_modules/ng-wordpress-services/bundles/ng-wordpress-services.umd.js'
+        'ng-wordpress': 'node_modules/ng-wordpress/bundles/ng-wordpress.umd.js'
     }
 });
 ```
@@ -21,7 +21,7 @@ No need to set up anything, just import it in your code.
 #### Plain JavaScript
 Include the `umd` bundle in your `index.html`:
 ```Html
-<script src="node_modules/ng-wordpress-services/bundles/ng-wordpress-services.umd.js"></script>
+<script src="node_modules/ng-wordpress/bundles/ng-wordpress.umd.js"></script>
 ```
 and use global `ng.wordpressServices` namespace.
 

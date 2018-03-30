@@ -10,7 +10,7 @@ declare var Window: {
 };
 
 @Injectable()
-export class WpNetworkService {
+export class WpNetwork {
     private baseUrl = 'http://localhost:8001/';
     private nonce = '';
 

@@ -62,6 +62,6 @@ export default {
         globals: globals,
         sourcemap: true,
         exports: 'named',
-        amd: { id: 'ng-wordpress-services' }
+        amd: { id: 'ng-wordpress' }
     }
 }

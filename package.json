@@ -1,11 +1,11 @@
 {
-    "name": "ng-wordpress-services",
+    "name": "ng-wordpress",
     "private": true,
     "version": "0.0.1",
     "description": "",
-    "main": "./bundles/ng-wordpress-services.umd.js",
-    "module": "./esm5/ng-wordpress-services.js",
-    "es2015": "./esm2015/ng-wordpress-services.js",
+    "main": "./bundles/ng-wordpress.umd.js",
+    "module": "./esm5/ng-wordpress.js",
+    "es2015": "./esm2015/ng-wordpress.js",
     "scripts": {
         "build": "node build.js",
         "test": "karma start",
@@ -16,16 +16,16 @@
         "compodoc": "compodoc -p tsconfig.json",
         "compodoc:serve": "compodoc -s"
     },
-    "typings": "./ng-wordpress-services.d.ts",
+    "typings": "./ng-wordpress.d.ts",
     "author": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kufuntu/ng-wordpress-services.git"
+        "url": "https://github.com/kufuntu/ng-wordpress.git"
     },
     "bugs": {
-        "url": "https://github.com/kufuntu/ng-wordpress-services/issues"
+        "url": "https://github.com/kufuntu/ng-wordpress/issues"
     },
-    "homepage": "https://github.com/kufuntu/ng-wordpress-services",
+    "homepage": "https://github.com/kufuntu/ng-wordpress",
     "keywords": [
         "angular",
         "wordpress",

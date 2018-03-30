@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WpNetworkService } from './wp-network.service';
+import { WpNetwork } from './wp-network';
 import { Observable } from 'rxjs/Observable';
 import { WpContext } from '../types/shared/WpContext';
 import { WpRequestOptions } from '../types/WpRequestOptions';
@@ -7,7 +7,7 @@ import { WpPostRevision } from '../types/WpPostRevision';
 
 @Injectable()
 export class WpPostRevisions {
-  constructor(private network: WpNetworkService) {}
+  constructor(private network: WpNetwork) {}
 
   public getList(
     args: { parent: number; context?: WpContext },
