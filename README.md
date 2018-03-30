@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://avatars0.githubusercontent.com/u/37930764?s=200" alt="ng-wordpress" height="320"/>
+</p>
 # @ng-wordpress/api
 
 ### Installing
