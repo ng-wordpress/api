@@ -2,14 +2,14 @@
 
 ### Installing
 ```Shell
-npm install ng-wordpress --save 
+npm install @ng-wordpress/api --save 
 ```
 ### Loading
 #### Using SystemJS configuration
 ```JavaScript
 System.config({
     map: {
-        'ng-wordpress': 'node_modules/ng-wordpress/bundles/ng-wordpress.umd.js'
+        'ng-wordpress': 'node_modules/@ng-wordpress/api/bundles/ng-wordpress.umd.js'
     }
 });
 ```
@@ -20,7 +20,7 @@ No need to set up anything, just import it in your code.
 #### Plain JavaScript
 Include the `umd` bundle in your `index.html`:
 ```Html
-<script src="node_modules/ng-wordpress/bundles/ng-wordpress.umd.js"></script>
+<script src="node_modules/@ng-wordpress/api/bundles/ng-wordpress.umd.js"></script>
 ```
 and use global `ng.wordpressApi` namespace.
 
