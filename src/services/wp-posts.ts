@@ -1,42 +1,36 @@
 import { Injectable } from '@angular/core';
 import { WpNetworkService } from './wp-network.service';
 import { Observable } from 'rxjs/Observable';
-import { WpPage } from '../types/WpPage';
 import { WpContext } from '../types/shared/WpContext';
 import { WpRequestOptions } from '../types/WpRequestOptions';
+import { WpPost } from '../types/WpPost';
 
 @Injectable()
-export class WpPagesService {
+export class WpPosts {
   constructor(private network: WpNetworkService) {}
 
-  public getList(args?: any, options?: WpRequestOptions): Observable<WpPage[]> {
-    return this.network.get('pages', args, options);
+  public getList(args?: any, options?: WpRequestOptions): Observable<WpPost[]> {
+    return this.network.get('posts', args, options);
   }
 
   public get(
     args: { id: number; context?: WpContext; password?: string },
     options?: WpRequestOptions
-  ): Observable<WpPage> {
+  ): Observable<WpPost> {
     const httpArgs = this.network.filter(args, ['id']);
-    return this.network.get('pages/' + args.id, httpArgs, options);
+    return this.network.get('posts/' + args.id, httpArgs, options);
   }
 
-  public create(
-    args: WpPage,
-    options?: WpRequestOptions
-  ): Observable<WpPage> {
-    return this.network.post('pages', args, {
+  public create(args: WpPost, options?: WpRequestOptions): Observable<WpPost> {
+    return this.network.post('posts', args, {
       withCredentials: true,
       ...options
     });
   }
 
-  public update(
-    args: WpPage,
-    options?: WpRequestOptions
-  ): Observable<WpPage> {
+  public update(args: WpPost, options?: WpRequestOptions): Observable<WpPost> {
     const httpArgs = this.network.filter(args, ['id']);
-    return this.network.post('pages/' + args.id, httpArgs, {
+    return this.network.post('posts/' + args.id, httpArgs, {
       withCredentials: true,
       ...options
     });
@@ -45,9 +39,9 @@ export class WpPagesService {
   public delete(
     args: { id: number },
     options?: WpRequestOptions
-  ): Observable<WpPage> {
+  ): Observable<WpPost> {
     return this.network.delete(
-      'pages/' + args.id,
+      'posts/' + args.id,
       {
         force: true
       },

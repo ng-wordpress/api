@@ -11,8 +11,8 @@ export class WpUsersService {
 
     constructor(private network: WpNetworkService) {}
 
-    public getList(options?: WpRequestOptions): Observable<WpUser[]> {
-        return this.network.get('users', {}, { withCredentials: true, ...options});
+    public getList(args?: any, options?: WpRequestOptions): Observable<WpUser[]> {
+        return this.network.get('users', args, { withCredentials: true, ...options});
     }
 
     public get(
