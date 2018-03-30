@@ -1,4 +1,4 @@
-# ng-wordpress
+# @ng-wordpress/api
 
 ### Installing
 ```Shell
