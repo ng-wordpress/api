@@ -3,9 +3,9 @@
     "license": "MIT",
     "version": "0.0.1",
     "description": "A WordPress REST API wrapper for Angular ✨",
-    "main": "./bundles/ng-wordpress-api.umd.js",
-    "module": "./esm5/ng-wordpress-api.js",
-    "es2015": "./esm2015/ng-wordpress-api.js",
+    "main": "./bundles/api.umd.js",
+    "module": "./esm5/api.js",
+    "es2015": "./esm2015/api.js",
     "scripts": {
         "build": "node build.js",
         "test": "karma start",
