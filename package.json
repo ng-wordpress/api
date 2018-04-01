@@ -1,7 +1,7 @@
 {
     "name": "@ng-wordpress/api",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A WordPress REST API wrapper for Angular ✨",
     "main": "./bundles/api.umd.js",
     "module": "./esm5/api.js",
