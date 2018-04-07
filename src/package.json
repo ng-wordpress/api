@@ -1,0 +1,32 @@
+{
+  "name": "@ng-wordpress/api",
+  "version": "0.0.3",
+  "description": "A WordPress REST API wrapper for Angular ✨",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ng-wordpress/api"
+  },
+  "author": {
+    "name": "Andre Steudel",
+    "email": "kontakt@andre-steudel.de"
+  },
+  "keywords": [
+    "angular",
+    "wordpress",
+    "wordpress-api",
+    "ng-wordpress"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ng-wordpress/api/issues"
+  },
+  "main": "api.umd.js",
+  "module": "api.js",
+  "jsnext:main": "api.js",
+  "typings": "api.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

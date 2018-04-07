@@ -11,7 +11,6 @@ import { WpPosts } from '../services/wp-posts';
 import { WpSettings } from '../services/wp-settings';
 import { WpTags } from '../services/wp-tags';
 import { WpTaxonomies } from '../services/wp-taxonomies';
-import { InjectorRef } from '../models/injector-ref';
 
 @NgModule({
   declarations: [],
@@ -39,9 +38,5 @@ export class NgWordpressApiModule {
         WpTaxonomies
       ]
     };
-  }
-
-  constructor(private injector: InjectorRef) {
-    // Creates the instance of the InjectorRef, so that module dependencies are available.
   }
 }

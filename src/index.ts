@@ -1,4 +1,3 @@
-// Public classes.
 export { NgWordpressApiModule } from './modules/ng-wordpress-api.module';
 export { WpCategories } from './services/wp-categories';
 export { WpComments } from './services/wp-comments';
